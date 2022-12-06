@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import './index.css';
 
 interface InputProps {
     handleCodeChange: (newCode: string) => void;
@@ -10,10 +11,7 @@ const Input: FC<InputProps> = ({handleCodeChange}) => {
     }
       
     return (
-        <div>
-            <label htmlFor=""></label>
-            <input type="text" onChange={handleChange}/>
-        </div>
+        <input className="input" type="text" onChange={handleChange}/>
     )
 }
 

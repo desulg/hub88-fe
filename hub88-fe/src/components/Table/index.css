@@ -1,0 +1,9 @@
+.table-list {
+    list-style: none;
+    padding: 0;
+}
+
+.table-list__item {
+    padding: 1rem;
+    border-bottom: 2px solid #ccc;
+}

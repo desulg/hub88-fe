@@ -25,7 +25,7 @@ const ButtonForm = () => {
   return (
     <div className="form">
       <div className='form__actions-container'>
-        <Input handleCodeChange={handleCodeChange} />
+        <Input testId='buttonForm' handleCodeChange={handleCodeChange} />
         <button
           className='main__button'
           onClick={() => getCountryByCode({ variables: { countryCode: code } })}

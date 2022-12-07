@@ -8,20 +8,24 @@ interface TableProps {
 const Table: FC<TableProps> = ({ data }) => {
   return (
     <table className="table-list">
-      <tr className="table-list__header">
-        <th>Code</th>
-        <th>Name</th>
-      </tr>
-      {!!data &&
-        data.map(
-          (country, i) =>
-            !!country && (
-              <tr key={i}>
-                <td>{country.code}</td>
-                <td>{country.name}</td>
-              </tr>
-            ),
-        )}
+      <thead>
+        <tr className="table-list__header">
+          <th>Code</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {!!data &&
+          data.map(
+            (country, i) =>
+              !!country && (
+                <tr key={i}>
+                  <td>{country.code}</td>
+                  <td>{country.name}</td>
+                </tr>
+              ),
+          )}
+      </tbody>
     </table >
   );
 }

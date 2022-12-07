@@ -19,12 +19,9 @@ const NoButtonForm = () => {
 
   let filteredCountries: Array<CountryData> = []
   const { loading, error, data } = useQuery(GET_ALLCOUNTRIES);
-  console.log(data)
 
   const handleCodeChange = useCallback((newCode: string) => {
-    setTimeout(() => {
-      setCode(newCode);
-    }, 1000);
+    setCode(newCode);
   }, []);
   
   filteredCountries = data?.countries.filter((country: CountryData) => {
@@ -34,7 +31,7 @@ const NoButtonForm = () => {
   return (
     <div className="form">
       <div className='form__actions-container'>
-        <Input handleCodeChange={handleCodeChange} />
+        <Input testId='noButtonForm' handleCodeChange={handleCodeChange} />
       </div>
 
       {loading && <p>Loading ...</p>}

@@ -1,9 +1,10 @@
 .table-list {
-    list-style: none;
     padding: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.table-list__item {
-    padding: 1rem;
-    border-bottom: 2px solid #ccc;
+.table-list__header {
+    border-bottom: .125rem solid #ccc;
 }

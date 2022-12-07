@@ -1,11 +1,11 @@
 .input {
     width: 100%;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    border: .125rem solid #ccc;
+    border-radius: .25rem;
+    font-size: 1rem;
     background-color: white;
-    background-position: 10px 10px; 
+    background-position: .625rem .625rem; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: .75rem 1.25rem .75rem 2.5rem;
 }

@@ -7,7 +7,7 @@ interface InputProps {
 
 const Input: FC<InputProps> = ({handleCodeChange}) => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        handleCodeChange(e.target.value);
+        handleCodeChange(e.target.value.toUpperCase());
     }
       
     return (
